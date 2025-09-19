@@ -48,9 +48,9 @@ Construction Project & Schedule Management System
 
 ### インストール
 
-\`\`\`bash
+```bash
 # リポジトリをクローン
-git clone https://github.com/yourusername/construction-schedule-management.git
+git clone 
 cd construction-schedule-management
 
 # 依存関係をインストール
@@ -58,7 +58,7 @@ npm install
 
 # 開発サーバーを起動
 npm run dev
-\`\`\`
+```
 
 アプリケーションは http://localhost:3000 で起動します。
 
@@ -66,7 +66,7 @@ npm run dev
 
 `.env.local`ファイルを作成し、以下の環境変数を設定してください：
 
-\`\`\`bash
+```bash
 # FileMaker連携用（オプション）
 FILEMAKER_SERVER_URL=your_filemaker_server_url
 FILEMAKER_DATABASE=your_database_name
@@ -75,7 +75,7 @@ FILEMAKER_PASSWORD=your_password
 
 # その他の設定
 NEXT_PUBLIC_APP_URL=http://localhost:3000
-\`\`\`
+```
 
 ## 使用方法
 
@@ -98,24 +98,40 @@ NEXT_PUBLIC_APP_URL=http://localhost:3000
 3. REST APIエンドポイントの設定
 4. 認証情報の環境変数設定
 
-詳細な連携手順については、[FileMaker連携ガイド](docs/filemaker-integration.md)を参照してください。
+詳細な連携手順については、FileMaker公式ドキュメントを参照してください。
 
 ## 開発
 
 ### ビルド
-\`\`\`bash
+```bash
 npm run build
-\`\`\`
+```
 
 ### 本番環境での起動
-\`\`\`bash
+```bash
 npm start
-\`\`\`
+```
 
 ### リント
-\`\`\`bash
+```bash
 npm run lint
-\`\`\`
+```
+
+## デプロイ
+
+このアプリケーションは以下のプラットフォームにデプロイできます：
+
+- **Vercel** (推奨): Next.jsに最適化
+- **Netlify**: 静的サイトホスティング
+- **AWS Amplify**: AWSエコシステムとの統合
+- **Railway**: 簡単なデプロイメント
+
+### Vercelでのデプロイ例
+
+1. [Vercel](https://vercel.com)でアカウントを作成
+2. GitHubリポジトリを接続
+3. 環境変数を設定
+4. デプロイを実行
 
 ## ライセンス
 
@@ -125,6 +141,18 @@ MIT License - 詳細は [LICENSE](LICENSE) ファイルを参照してくださ�
 
 プルリクエストや Issue の報告を歓迎します。
 
+1. このリポジトリをフォーク
+2. フィーチャーブランチを作成 (`git checkout -b feature/amazing-feature`)
+3. 変更をコミット (`git commit -m 'Add some amazing feature'`)
+4. ブランチにプッシュ (`git push origin feature/amazing-feature`)
+5. プルリクエストを作成
+
 ## サポート
 
 質問や問題がある場合は、GitHub Issues でお知らせください。
+
+## 注意事項
+
+- 本アプリケーションはデモンストレーション目的で作成されています
+- 本番環境で使用する際は、適切なセキュリティ設定を行ってください
+- FileMaker連携機能は設定ファイルの調整が必要です
