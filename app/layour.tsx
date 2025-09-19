@@ -6,9 +6,9 @@ import { DM_Sans } from "next/font/google"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "v0 App",
-  description: "Created with v0",
-  generator: "v0.app",
+  title: "建設現場向け案件・スケジュール管理システム",
+  description: "建設現場の担当者がスマートフォンから簡単に案件情報を入力・管理できるWebアプリケーション",
+  generator: "Next.js",
 }
 
 const dmSans = DM_Sans({
